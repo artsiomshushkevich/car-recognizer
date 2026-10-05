@@ -8,3 +8,7 @@ A playful, offline friendly car-brand flash-card app built with Vite, React, and
 npm install
 npm run dev
 ```
+
+## Made with
+
+This app was vibecoded with Codex and GPT-6.
