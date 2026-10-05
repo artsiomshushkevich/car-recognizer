@@ -11,4 +11,4 @@ npm run dev
 
 ## Made with
 
-This app was vibecoded with Codex and GPT-6.
+This app was vibecoded with Codex and GPT-6 for my two-year-old son, who loves cars.
