@@ -75,7 +75,7 @@ kbd { display: inline-grid; place-items: center; width: 18px; height: 18px; bord
   .mode-pill { font-size: 9px; padding: 8px 10px; }
   .intro { margin-bottom: 18px; }
   .card-stage { height: min(43vh, 350px); min-height: 278px; }
-  .brand-card { padding: 17px 17px 16px; }
+  .brand-card { padding: 17px 17px 16px; transition-duration: .36s; }
   .logo-well img { max-height: 162px; }
   .nav-button { min-height: 50px; padding: 0 15px; }
   .shuffle-button { width: 44px; height: 44px; }

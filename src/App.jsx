@@ -58,8 +58,10 @@ export default function App() {
   const endDrag = (event) => {
     if (!touchStart.current) return
     const distance = event && touchStart.current ? event.clientX - touchStart.current.x : offset
-    if (distance > 70) next()
-    else if (distance < -70) previous()
+    const cardWidth = event?.currentTarget?.getBoundingClientRect().width ?? 0
+    const threshold = cardWidth ? Math.max(90, cardWidth * 0.28) : 90
+    if (distance > threshold) next()
+    else if (distance < -threshold) previous()
     else setOffset(0)
     touchStart.current = null
     setDragging(false)
@@ -78,7 +80,7 @@ export default function App() {
       <section className="learning-area" aria-labelledby="page-title">
         <div className="intro">
           <p className="eyebrow"><span aria-hidden="true">🏁</span> НА СТАРТ, ВНИМАНИЕ, УЧИМСЯ!</p>
-          <h1 id="page-title">Знакомьтесь: <span>марки автомобилей</span></h1>
+          <h1 id="page-title">Знакомьтесь: <span>марки автомобилей</span>!</h1>
           <p className="subtitle">По одному логотипу за раз. У вас всё получится!</p>
         </div>
 
