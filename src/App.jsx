@@ -44,14 +44,12 @@ export default function App() {
           <span className="brand-icon" aria-hidden="true">🚗</span>
           <span>Врум Рум</span>
         </a>
-        <div className="mode-pill"><span aria-hidden="true">✦</span> АВТОКВЕСТ</div>
       </header>
 
       <section className="learning-area" aria-labelledby="page-title">
         <div className="intro">
-          <p className="eyebrow"><span aria-hidden="true">🏁</span> НА СТАРТ, ВНИМАНИЕ, УЧИМСЯ!</p>
           <h1 id="page-title">Знакомься: <span>марки автомобилей</span>!</h1>
-          <p className="subtitle">По одному логотипу за раз. У тебя всё получится!</p>
+          <p className="eyebrow"><span aria-hidden="true">🏁</span> НА СТАРТ, ВНИМАНИЕ, УЧИМСЯ!</p>
         </div>
 
         <div className="progress-row" aria-live="polite">
@@ -63,8 +61,6 @@ export default function App() {
         </div>
 
         <div className="card-stage">
-          <div className="peek-card peek-back" aria-hidden="true" />
-          <div className="peek-card peek-front" aria-hidden="true" />
           <article
             className="brand-card"
             onClick={next}
@@ -78,12 +74,10 @@ export default function App() {
             }}
             aria-label={`Карточка марки автомобиля: ${card.name}`}
           >
-            <div className="card-topline"><span className="sparkle" aria-hidden="true">✦</span><span>МАРКА №{String(position + 1).padStart(2, '0')}</span><span className="sparkle" aria-hidden="true">✦</span></div>
             <div className="logo-well">
               <img key={card.logo} src={`${import.meta.env.BASE_URL}logos/${card.logo}`} alt={`Логотип марки ${card.name}`} draggable="false" />
             </div>
             <div className="card-name">{card.name}</div>
-            <div className="card-hint"><span aria-hidden="true">👆</span> НАЖМИ, ЕСЛИ ЗНАЕШЬ!</div>
           </article>
         </div>
 
@@ -98,7 +92,7 @@ export default function App() {
             <span className="button-word">ДАЛЕЕ</span><span aria-hidden="true">→</span>
           </button>
         </div>
-        <p className="keyboard-hint">СОВЕТ: ИСПОЛЬЗУЙТЕ КЛАВИШИ-СТРЕЛКИ <kbd>←</kbd> <kbd>→</kbd></p>
+        <p className="keyboard-hint">СОВЕТ: ИСПОЛЬЗУЙ КЛАВИШИ-СТРЕЛКИ <kbd>←</kbd> <kbd>→</kbd></p>
       </section>
       <footer className="footer-note"><span aria-hidden="true">⭐</span> Любой отличный водитель начинает с любопытства <span aria-hidden="true">⭐</span></footer>
     </main>
