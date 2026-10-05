@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import brands from './brands.json'
 
 const shuffle = (items) => {
@@ -13,23 +13,17 @@ const shuffle = (items) => {
 export default function App() {
   const [deck, setDeck] = useState(() => shuffle(brands))
   const [position, setPosition] = useState(0)
-  const [offset, setOffset] = useState(0)
-  const [dragging, setDragging] = useState(false)
-  const touchStart = useRef(null)
   const card = deck[position]
 
   const next = useCallback(() => {
     setPosition((current) => Math.min(current + 1, deck.length - 1))
-    setOffset(0)
   }, [deck.length])
   const previous = useCallback(() => {
     setPosition((current) => Math.max(current - 1, 0))
-    setOffset(0)
   }, [])
   const reshuffle = () => {
     setDeck(shuffle(brands))
     setPosition(0)
-    setOffset(0)
   }
 
   useEffect(() => {
@@ -42,30 +36,6 @@ export default function App() {
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [next, previous])
-
-  const startDrag = (event) => {
-    if (event.pointerType === 'mouse' && event.button !== 0) return
-    touchStart.current = { x: event.clientX, y: event.clientY }
-    setDragging(true)
-    try { event.currentTarget.setPointerCapture?.(event.pointerId) } catch { /* synthetic pointer events have no capture target */ }
-  }
-  const moveDrag = (event) => {
-    if (!touchStart.current) return
-    const dx = event.clientX - touchStart.current.x
-    const dy = event.clientY - touchStart.current.y
-    if (Math.abs(dx) > Math.abs(dy)) setOffset(Math.max(-130, Math.min(130, dx)))
-  }
-  const endDrag = (event) => {
-    if (!touchStart.current) return
-    const distance = event && touchStart.current ? event.clientX - touchStart.current.x : offset
-    const cardWidth = event?.currentTarget?.getBoundingClientRect().width ?? 0
-    const threshold = cardWidth ? Math.max(90, cardWidth * 0.28) : 90
-    if (distance > threshold) next()
-    else if (distance < -threshold) previous()
-    else setOffset(0)
-    touchStart.current = null
-    setDragging(false)
-  }
 
   return (
     <main className="page-shell">
@@ -80,8 +50,8 @@ export default function App() {
       <section className="learning-area" aria-labelledby="page-title">
         <div className="intro">
           <p className="eyebrow"><span aria-hidden="true">🏁</span> НА СТАРТ, ВНИМАНИЕ, УЧИМСЯ!</p>
-          <h1 id="page-title">Знакомьтесь: <span>марки автомобилей</span>!</h1>
-          <p className="subtitle">По одному логотипу за раз. У вас всё получится!</p>
+          <h1 id="page-title">Знакомься: <span>марки автомобилей</span>!</h1>
+          <p className="subtitle">По одному логотипу за раз. У тебя всё получится!</p>
         </div>
 
         <div className="progress-row" aria-live="polite">
@@ -96,12 +66,16 @@ export default function App() {
           <div className="peek-card peek-back" aria-hidden="true" />
           <div className="peek-card peek-front" aria-hidden="true" />
           <article
-            className={`brand-card${dragging ? ' is-dragging' : ''}`}
-            style={{ transform: `translateX(${offset}px) rotate(${offset / 24}deg)` }}
-            onPointerDown={startDrag}
-            onPointerMove={moveDrag}
-            onPointerUp={endDrag}
-            onPointerCancel={endDrag}
+            className="brand-card"
+            onClick={next}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault()
+                next()
+              }
+            }}
             aria-label={`Карточка марки автомобиля: ${card.name}`}
           >
             <div className="card-topline"><span className="sparkle" aria-hidden="true">✦</span><span>МАРКА №{String(position + 1).padStart(2, '0')}</span><span className="sparkle" aria-hidden="true">✦</span></div>
@@ -109,9 +83,7 @@ export default function App() {
               <img key={card.logo} src={`${import.meta.env.BASE_URL}logos/${card.logo}`} alt={`Логотип марки ${card.name}`} draggable="false" />
             </div>
             <div className="card-name">{card.name}</div>
-            <div className="card-hint"><span aria-hidden="true">👆</span> ЛИСТАЙТЕ, ЧТОБЫ ИЗУЧАТЬ</div>
-            {offset > 24 && <span className="swipe-stamp stamp-next" aria-hidden="true">ДАЛЕЕ!</span>}
-            {offset < -24 && <span className="swipe-stamp stamp-back" aria-hidden="true">НАЗАД!</span>}
+            <div className="card-hint"><span aria-hidden="true">👆</span> НАЖМИ, ЕСЛИ ЗНАЕШЬ!</div>
           </article>
         </div>
 

@@ -1,6 +1,6 @@
 # Vroom Room
 
-A playful, offline friendly car-brand flash-card app built with Vite, React, and Tailwind CSS. Swipe, use the on-screen arrows, or press the left and right arrow keys to browse a shuffled deck of 100 car brand SVGs.
+A playful, offline friendly car-brand flash-card app built with Vite and React. Click a card, use the on-screen arrows, or press the left and right arrow keys to browse a shuffled deck of 100 car brand SVGs.
 
 ## Run locally
 

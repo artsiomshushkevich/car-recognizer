@@ -32,10 +32,6 @@
     "logo": "avatr-logo.svg"
   },
   {
-    "name": "BAC",
-    "logo": "bac-logo.svg"
-  },
-  {
     "name": "BAIC",
     "logo": "baic-logo.svg"
   },
@@ -106,10 +102,6 @@
   {
     "name": "Geely",
     "logo": "geely-logo.svg"
-  },
-  {
-    "name": "Holden",
-    "logo": "holden-logo.svg"
   },
   {
     "name": "Hummer",
