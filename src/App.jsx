@@ -53,7 +53,7 @@ export default function App() {
         </div>
 
         <div className="progress-row" aria-live="polite">
-          <span className="progress-label">ВАШ ГАРАЖ</span>
+          <span className="progress-label">ТВОЙ ГАРАЖ</span>
           <span className="progress-count">{position + 1}<span> / {deck.length}</span></span>
         </div>
         <div className="progress-track" role="progressbar" aria-label="Просмотренные марки" aria-valuemin="1" aria-valuemax={deck.length} aria-valuenow={position + 1}>
