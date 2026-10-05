@@ -2,6 +2,8 @@
 
 A playful, offline friendly car-brand flash-card app built with Vite and React. Click a card, use the on-screen arrows, or press the left and right arrow keys to browse a shuffled deck of 100 car brand SVGs.
 
+Try it: [artsiomshushkevich.github.io/car-recognizer](https://artsiomshushkevich.github.io/car-recognizer/)
+
 ## Run locally
 
 ```sh
