@@ -16,32 +16,8 @@
     "logo": "aion-logo.svg"
   },
   {
-    "name": "Aiways",
-    "logo": "aiways-logo.svg"
-  },
-  {
-    "name": "Aixam",
-    "logo": "aixam-logo.svg"
-  },
-  {
     "name": "Alfa Romeo",
     "logo": "alfa-romeo-logo.svg"
-  },
-  {
-    "name": "Alpina",
-    "logo": "alpina-logo.svg"
-  },
-  {
-    "name": "Alpine",
-    "logo": "alpine-logo.svg"
-  },
-  {
-    "name": "Ariel",
-    "logo": "ariel-logo.svg"
-  },
-  {
-    "name": "Aro",
-    "logo": "aro-logo.svg"
   },
   {
     "name": "Aston Martin",
@@ -50,14 +26,6 @@
   {
     "name": "Audi",
     "logo": "audi-logo.svg"
-  },
-  {
-    "name": "Austin",
-    "logo": "austin-logo.svg"
-  },
-  {
-    "name": "Autobianchi",
-    "logo": "autobianchi-logo.svg"
   },
   {
     "name": "Avatr",
@@ -88,28 +56,8 @@
     "logo": "bentley-logo.svg"
   },
   {
-    "name": "Bertone",
-    "logo": "bertone-logo.svg"
-  },
-  {
-    "name": "Bollinger",
-    "logo": "bollinger-logo.svg"
-  },
-  {
-    "name": "Brabham",
-    "logo": "brabham-logo.svg"
-  },
-  {
     "name": "Bugatti",
     "logo": "bugatti-logo.svg"
-  },
-  {
-    "name": "Callaway",
-    "logo": "callaway-logo.svg"
-  },
-  {
-    "name": "Caterham",
-    "logo": "caterham-logo.svg"
   },
   {
     "name": "Chrysler",
@@ -128,28 +76,12 @@
     "logo": "dfsk-logo.svg"
   },
   {
-    "name": "DS",
-    "logo": "ds-logo.svg"
-  },
-  {
     "name": "Dacia",
     "logo": "dacia-logo.svg"
   },
   {
-    "name": "Dadi",
-    "logo": "dadi-logo.svg"
-  },
-  {
     "name": "Daihatsu",
     "logo": "daihatsu-logo.svg"
-  },
-  {
-    "name": "Daimler",
-    "logo": "daimler-logo.svg"
-  },
-  {
-    "name": "De Lorean",
-    "logo": "de-lorean-logo.svg"
   },
   {
     "name": "Deepal",
@@ -158,14 +90,6 @@
   {
     "name": "Denza",
     "logo": "denza-logo.svg"
-  },
-  {
-    "name": "EMC",
-    "logo": "emc-logo.svg"
-  },
-  {
-    "name": "EVO",
-    "logo": "evo-logo.svg"
   },
   {
     "name": "FAW",
@@ -184,26 +108,6 @@
     "logo": "geely-logo.svg"
   },
   {
-    "name": "Genesis",
-    "logo": "genesis-logo.svg"
-  },
-  {
-    "name": "Geo",
-    "logo": "geo-logo.svg"
-  },
-  {
-    "name": "Geometry",
-    "logo": "geometry-logo.svg"
-  },
-  {
-    "name": "Ginetta",
-    "logo": "ginetta-logo.svg"
-  },
-  {
-    "name": "Hennessey",
-    "logo": "hennessey-logo.svg"
-  },
-  {
     "name": "Holden",
     "logo": "holden-logo.svg"
   },
@@ -216,28 +120,8 @@
     "logo": "hyundai-logo.svg"
   },
   {
-    "name": "ICH-X",
-    "logo": "ich-x-logo.svg"
-  },
-  {
-    "name": "IMSA",
-    "logo": "imsa-logo.svg"
-  },
-  {
-    "name": "INEOS",
-    "logo": "ineos-logo.svg"
-  },
-  {
     "name": "Infiniti",
     "logo": "infiniti-logo.svg"
-  },
-  {
-    "name": "Invicta",
-    "logo": "invicta-logo.svg"
-  },
-  {
-    "name": "Isdera",
-    "logo": "isdera-logo.svg"
   },
   {
     "name": "Isuzu",
@@ -288,10 +172,6 @@
     "logo": "lotus-logo.svg"
   },
   {
-    "name": "Maruti",
-    "logo": "maruti-logo.svg"
-  },
-  {
     "name": "Mazda",
     "logo": "mazda-logo.svg"
   },
@@ -318,10 +198,6 @@
   {
     "name": "Opel",
     "logo": "opel-logo.svg"
-  },
-  {
-    "name": "PUCH",
-    "logo": "puch-logo.svg"
   },
   {
     "name": "Peugeot",
@@ -364,16 +240,8 @@
     "logo": "tesla-logo.svg"
   },
   {
-    "name": "Togg",
-    "logo": "togg-logo.svg"
-  },
-  {
     "name": "Toyota",
     "logo": "toyota-logo.svg"
-  },
-  {
-    "name": "Trabant",
-    "logo": "trabant-logo.svg"
   },
   {
     "name": "Volkswagen",
@@ -390,10 +258,6 @@
   {
     "name": "Yangwang",
     "logo": "yangwang-logo.svg"
-  },
-  {
-    "name": "e.GO",
-    "logo": "ego-logo.svg"
   },
   {
     "name": "iCAR",

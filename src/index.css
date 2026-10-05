@@ -23,14 +23,15 @@ button:disabled { cursor: not-allowed; }
 .brand-icon { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 12px; background: #ffd867; font-size: 21px; box-shadow: 0 3px 0 #e2ad3b; }
 .mode-pill { font-size: 10px; letter-spacing: .12em; font-weight: 900; color: #655229; background: #ffedbb; border: 1px solid #f2d78e; padding: 9px 13px; border-radius: 999px; }
 .mode-pill span { color: #efa927; margin-right: 4px; }
-.learning-area { width: min(100%, 550px); margin: 0 auto; padding: 10px 24px 24px; display: flex; flex-direction: column; align-items: stretch; flex: 1; }
+.learning-area { width: min(100%, 550px); margin: 0 auto; padding: 10px 24px 24px; display: flex; flex-direction: column; align-items: center; flex: 1; }
+.learning-area > :not(.card-stage) { width: 100%; }
 .intro { text-align: center; margin-bottom: 22px; }
 .eyebrow { margin: 0 0 8px; color: #925a16; font-size: 10px; font-weight: 900; letter-spacing: .17em; }
 .eyebrow span { margin-right: 4px; }
 h1 { margin: 0; font-weight: 950; line-height: 1.05; letter-spacing: -.055em; font-size: clamp(32px, 8vw, 42px); }
 h1 span { color: #ef8a38; }
 .subtitle { margin: 9px 0 0; color: #686b72; font-size: 14px; font-weight: 600; }
-.progress-row { display: flex; justify-content: space-between; align-items: center; margin: 0 4px 8px; }
+.progress-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 0 4px 8px; }
 .progress-label { color: #686b72; font-size: 10px; letter-spacing: .14em; font-weight: 900; }
 .progress-count { color: #a65312; font-size: 15px; font-weight: 950; }
 .progress-count span { color: #686b72; font-size: 12px; }

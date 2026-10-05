@@ -58,8 +58,8 @@ export default function App() {
   const endDrag = (event) => {
     if (!touchStart.current) return
     const distance = event && touchStart.current ? event.clientX - touchStart.current.x : offset
-    if (distance > 70) previous()
-    else if (distance < -70) next()
+    if (distance > 70) next()
+    else if (distance < -70) previous()
     else setOffset(0)
     touchStart.current = null
     setDragging(false)
@@ -68,25 +68,25 @@ export default function App() {
   return (
     <main className="page-shell">
       <header className="topbar">
-        <a className="brand-mark" href="#home" aria-label="Vroom Room home">
+        <a className="brand-mark" href="#home" aria-label="Главная — Врум Рум">
           <span className="brand-icon" aria-hidden="true">🚗</span>
-          <span>Vroom Room</span>
+          <span>Врум Рум</span>
         </a>
-        <div className="mode-pill"><span aria-hidden="true">✦</span> BRAND QUEST</div>
+        <div className="mode-pill"><span aria-hidden="true">✦</span> АВТОКВЕСТ</div>
       </header>
 
       <section className="learning-area" aria-labelledby="page-title">
         <div className="intro">
-          <p className="eyebrow"><span aria-hidden="true">🏁</span> READY, SET, LEARN!</p>
-          <h1 id="page-title">Meet the <span>car brands</span></h1>
-          <p className="subtitle">One logo at a time. You’ve got this!</p>
+          <p className="eyebrow"><span aria-hidden="true">🏁</span> НА СТАРТ, ВНИМАНИЕ, УЧИМСЯ!</p>
+          <h1 id="page-title">Знакомьтесь: <span>марки автомобилей</span></h1>
+          <p className="subtitle">По одному логотипу за раз. У вас всё получится!</p>
         </div>
 
         <div className="progress-row" aria-live="polite">
-          <span className="progress-label">YOUR GARAGE</span>
+          <span className="progress-label">ВАШ ГАРАЖ</span>
           <span className="progress-count">{position + 1}<span> / {deck.length}</span></span>
         </div>
-        <div className="progress-track" role="progressbar" aria-label="Brands explored" aria-valuemin="1" aria-valuemax={deck.length} aria-valuenow={position + 1}>
+        <div className="progress-track" role="progressbar" aria-label="Просмотренные марки" aria-valuemin="1" aria-valuemax={deck.length} aria-valuenow={position + 1}>
           <span style={{ width: `${((position + 1) / deck.length) * 100}%` }} />
         </div>
 
@@ -100,33 +100,33 @@ export default function App() {
             onPointerMove={moveDrag}
             onPointerUp={endDrag}
             onPointerCancel={endDrag}
-            aria-label={`Car brand card: ${card.name}`}
+            aria-label={`Карточка марки автомобиля: ${card.name}`}
           >
-            <div className="card-topline"><span className="sparkle" aria-hidden="true">✦</span><span>BRAND #{String(position + 1).padStart(2, '0')}</span><span className="sparkle" aria-hidden="true">✦</span></div>
+            <div className="card-topline"><span className="sparkle" aria-hidden="true">✦</span><span>МАРКА №{String(position + 1).padStart(2, '0')}</span><span className="sparkle" aria-hidden="true">✦</span></div>
             <div className="logo-well">
-              <img key={card.logo} src={`/logos/${card.logo}`} alt={`${card.name} logo`} draggable="false" />
+              <img key={card.logo} src={`${import.meta.env.BASE_URL}logos/${card.logo}`} alt={`Логотип марки ${card.name}`} draggable="false" />
             </div>
             <div className="card-name">{card.name}</div>
-            <div className="card-hint"><span aria-hidden="true">👆</span> SWIPE TO EXPLORE</div>
-            {offset < -24 && <span className="swipe-stamp stamp-next" aria-hidden="true">NEXT!</span>}
-            {offset > 24 && <span className="swipe-stamp stamp-back" aria-hidden="true">BACK!</span>}
+            <div className="card-hint"><span aria-hidden="true">👆</span> ЛИСТАЙТЕ, ЧТОБЫ ИЗУЧАТЬ</div>
+            {offset > 24 && <span className="swipe-stamp stamp-next" aria-hidden="true">ДАЛЕЕ!</span>}
+            {offset < -24 && <span className="swipe-stamp stamp-back" aria-hidden="true">НАЗАД!</span>}
           </article>
         </div>
 
-        <div className="controls" aria-label="Brand navigation">
-          <button className="nav-button back-button" onClick={previous} disabled={position === 0} aria-label="Previous car brand">
-            <span aria-hidden="true">←</span><span className="button-word">BACK</span>
+        <div className="controls" aria-label="Навигация по маркам">
+          <button className="nav-button back-button" onClick={previous} disabled={position === 0} aria-label="Предыдущая марка автомобиля">
+            <span aria-hidden="true">←</span><span className="button-word">НАЗАД</span>
           </button>
-          <button className="shuffle-button" onClick={reshuffle} aria-label="Shuffle brands and start over">
-            <span aria-hidden="true">⤨</span><span className="sr-only">Shuffle brands and start over</span>
+          <button className="shuffle-button" onClick={reshuffle} aria-label="Перемешать марки и начать заново">
+            <span aria-hidden="true">⤨</span><span className="sr-only">Перемешать марки и начать заново</span>
           </button>
-          <button className="nav-button next-button" onClick={next} disabled={position === deck.length - 1} aria-label="Next car brand">
-            <span className="button-word">NEXT</span><span aria-hidden="true">→</span>
+          <button className="nav-button next-button" onClick={next} disabled={position === deck.length - 1} aria-label="Следующая марка автомобиля">
+            <span className="button-word">ДАЛЕЕ</span><span aria-hidden="true">→</span>
           </button>
         </div>
-        <p className="keyboard-hint">TIP: USE THE <kbd>←</kbd> <kbd>→</kbd> ARROW KEYS TOO</p>
+        <p className="keyboard-hint">СОВЕТ: ИСПОЛЬЗУЙТЕ КЛАВИШИ-СТРЕЛКИ <kbd>←</kbd> <kbd>→</kbd></p>
       </section>
-      <footer className="footer-note"><span aria-hidden="true">⭐</span> Every great driver starts curious <span aria-hidden="true">⭐</span></footer>
+      <footer className="footer-note"><span aria-hidden="true">⭐</span> Любой отличный водитель начинает с любопытства <span aria-hidden="true">⭐</span></footer>
     </main>
   )
 }
