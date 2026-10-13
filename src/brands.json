@@ -12,10 +12,6 @@
     "logo": "acura-logo.svg"
   },
   {
-    "name": "Aion",
-    "logo": "aion-logo.svg"
-  },
-  {
     "name": "Alfa Romeo",
     "logo": "alfa-romeo-logo.svg"
   },
@@ -60,6 +56,10 @@
     "logo": "chrysler-logo.svg"
   },
   {
+    "name": "Chevrolet",
+    "logo": "chevrolet-logo.svg"
+  },
+  {
     "name": "Citroen",
     "logo": "citroen-logo.svg"
   },
@@ -100,12 +100,16 @@
     "logo": "fiat-logo.svg"
   },
   {
+    "name": "Ford",
+    "logo": "ford-logo.svg"
+  },
+  {
     "name": "Geely",
     "logo": "geely-logo.svg"
   },
   {
-    "name": "Hummer",
-    "logo": "hummer-logo.svg"
+    "name": "Honda",
+    "logo": "honda-logo.svg"
   },
   {
     "name": "Hyundai",
@@ -154,6 +158,10 @@
   {
     "name": "Land Rover",
     "logo": "land-rover-logo.svg"
+  },
+  {
+    "name": "Lexus",
+    "logo": "lexus-logo.svg"
   },
   {
     "name": "Lincoln",
@@ -222,6 +230,10 @@
   {
     "name": "Skoda",
     "logo": "skoda-logo.svg"
+  },
+  {
+    "name": "Subaru",
+    "logo": "subaru-logo.svg"
   },
   {
     "name": "Suzuki",
