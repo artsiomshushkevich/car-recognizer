@@ -1,0 +1,390 @@
+[
+  {
+    "name": "Abarth",
+    "image": "./assets/car-photos/abarth/500-2.webp"
+  },
+  {
+    "name": "Acura",
+    "image": "./assets/car-photos/acura/rdx-1.webp"
+  },
+  {
+    "name": "Acura",
+    "image": "./assets/car-photos/acura/integra-1.webp"
+  },
+  {
+    "name": "Alfa Romeo",
+    "image": "./assets/car-photos/alfa-romeo/stelvio-1.webp"
+  },
+  {
+    "name": "Alfa Romeo",
+    "image": "./assets/car-photos/alfa-romeo/mito-2.webp"
+  },
+  {
+    "name": "Audi",
+    "image": "./assets/car-photos/audi/e-tron-gt-1.webp"
+  },
+  {
+    "name": "Audi",
+    "image": "./assets/car-photos/audi/q-1.webp"
+  },
+  {
+    "name": "Audi",
+    "image": "./assets/car-photos/audi/q-2.webp"
+  },
+  {
+    "name": "Audi",
+    "image": "./assets/car-photos/audi/s-line-1.webp"
+  },
+  {
+    "name": "BYD",
+    "image": "./assets/car-photos/byd/han-1.webp"
+  },
+  {
+    "name": "Bugatti",
+    "image": "./assets/car-photos/bugatti/centodieci-3.webp"
+  },
+  {
+    "name": "Chevrolet",
+    "image": "./assets/car-photos/chevrolet/spark-euv-1.webp"
+  },
+  {
+    "name": "Chevrolet",
+    "image": "./assets/car-photos/chevrolet/equinox-1.webp"
+  },
+  {
+    "name": "Chevrolet",
+    "image": "./assets/car-photos/chevrolet/trax-1.webp"
+  },
+  {
+    "name": "Citroen",
+    "image": "./assets/car-photos/citroen/c3-1.webp"
+  },
+  {
+    "name": "Citroen",
+    "image": "./assets/car-photos/citroen/c3-aircross-1.webp"
+  },
+  {
+    "name": "Cupra",
+    "image": "./assets/car-photos/cupra/ateca-1.webp"
+  },
+  {
+    "name": "Dacia",
+    "image": "./assets/car-photos/dacia/sandero-3.webp"
+  },
+  {
+    "name": "Dacia",
+    "image": "./assets/car-photos/dacia/logan-2.webp"
+  },
+  {
+    "name": "Dacia",
+    "image": "./assets/car-photos/dacia/logan-3.webp"
+  },
+  {
+    "name": "Daihatsu",
+    "image": "./assets/car-photos/daihatsu/ayla-1.webp"
+  },
+  {
+    "name": "Ferrari",
+    "image": "./assets/car-photos/ferrari/f40-2.webp"
+  },
+  {
+    "name": "Ferrari",
+    "image": "./assets/car-photos/ferrari/daytona-sp3-1.webp"
+  },
+  {
+    "name": "Ferrari",
+    "image": "./assets/car-photos/ferrari/california-1.webp"
+  },
+  {
+    "name": "Fiat",
+    "image": "./assets/car-photos/fiat/topolino-1.webp"
+  },
+  {
+    "name": "Fiat",
+    "image": "./assets/car-photos/fiat/doblo-1.webp"
+  },
+  {
+    "name": "Fiat",
+    "image": "./assets/car-photos/fiat/doblo-2.webp"
+  },
+  {
+    "name": "Ford",
+    "image": "./assets/car-photos/ford/bronco-3.webp"
+  },
+  {
+    "name": "Ford",
+    "image": "./assets/car-photos/ford/explorer-2.webp"
+  },
+  {
+    "name": "Geely",
+    "image": "./assets/car-photos/geely/boyue-1.webp"
+  },
+  {
+    "name": "Geely",
+    "image": "./assets/car-photos/geely/boyue-2.webp"
+  },
+  {
+    "name": "Geely",
+    "image": "./assets/car-photos/geely/binyue-1.webp"
+  },
+  {
+    "name": "Geely",
+    "image": "./assets/car-photos/geely/binyue-2.webp"
+  },
+  {
+    "name": "Honda",
+    "image": "./assets/car-photos/honda/pilot-3.webp"
+  },
+  {
+    "name": "Hyundai",
+    "image": "./assets/car-photos/hyundai/nexo-1.webp"
+  },
+  {
+    "name": "Hyundai",
+    "image": "./assets/car-photos/hyundai/ioniq-5-2.webp"
+  },
+  {
+    "name": "Hyundai",
+    "image": "./assets/car-photos/hyundai/ioniq-5-3.webp"
+  },
+  {
+    "name": "Infiniti",
+    "image": "./assets/car-photos/infiniti/qx80-2.webp"
+  },
+  {
+    "name": "Infiniti",
+    "image": "./assets/car-photos/infiniti/qx50-1.webp"
+  },
+  {
+    "name": "Isuzu",
+    "image": "./assets/car-photos/isuzu/mu-1.webp"
+  },
+  {
+    "name": "Jeep",
+    "image": "./assets/car-photos/jeep/grand-cherokee-1.webp"
+  },
+  {
+    "name": "Jeep",
+    "image": "./assets/car-photos/jeep/grand-cherokee-2.webp"
+  },
+  {
+    "name": "Kia",
+    "image": "./assets/car-photos/kia/picanto-1.webp"
+  },
+  {
+    "name": "Kia",
+    "image": "./assets/car-photos/kia/sportage-1.webp"
+  },
+  {
+    "name": "Kia",
+    "image": "./assets/car-photos/kia/sportage-2.webp"
+  },
+  {
+    "name": "Kia",
+    "image": "./assets/car-photos/kia/ev6-2.webp"
+  },
+  {
+    "name": "Lada",
+    "image": "./assets/car-photos/lada/xray-1.webp"
+  },
+  {
+    "name": "Lada",
+    "image": "./assets/car-photos/lada/niva-1.webp"
+  },
+  {
+    "name": "Lada",
+    "image": "./assets/car-photos/lada/iskra-1.webp"
+  },
+  {
+    "name": "Land Rover",
+    "image": "./assets/car-photos/land-rover/range-rover-sport-3.webp"
+  },
+  {
+    "name": "Lexus",
+    "image": "./assets/car-photos/lexus/rz-2.webp"
+  },
+  {
+    "name": "Lexus",
+    "image": "./assets/car-photos/lexus/rz-3.webp"
+  },
+  {
+    "name": "Lotus",
+    "image": "./assets/car-photos/lotus/eletre-1.webp"
+  },
+  {
+    "name": "Mazda",
+    "image": "./assets/car-photos/mazda/cx-5-1.webp"
+  },
+  {
+    "name": "Mini",
+    "image": "./assets/car-photos/mini/countryman-2.webp"
+  },
+  {
+    "name": "Mini",
+    "image": "./assets/car-photos/mini/coupe-1.webp"
+  },
+  {
+    "name": "Mitsubishi",
+    "image": "./assets/car-photos/mitsubishi/outlander-1.webp"
+  },
+  {
+    "name": "Mitsubishi",
+    "image": "./assets/car-photos/mitsubishi/outlander-2.webp"
+  },
+  {
+    "name": "Nissan",
+    "image": "./assets/car-photos/nissan/leaf-1.webp"
+  },
+  {
+    "name": "Nissan",
+    "image": "./assets/car-photos/nissan/leaf-2.webp"
+  },
+  {
+    "name": "Peugeot",
+    "image": "./assets/car-photos/peugeot/landtrek-1.webp"
+  },
+  {
+    "name": "Peugeot",
+    "image": "./assets/car-photos/peugeot/208-1.webp"
+  },
+  {
+    "name": "Porsche",
+    "image": "./assets/car-photos/porsche/718-1.webp"
+  },
+  {
+    "name": "RAM",
+    "image": "./assets/car-photos/ram/3500-2.webp"
+  },
+  {
+    "name": "Renault",
+    "image": "./assets/car-photos/renault/clio-1.webp"
+  },
+  {
+    "name": "Renault",
+    "image": "./assets/car-photos/renault/duster-1.webp"
+  },
+  {
+    "name": "Rivian",
+    "image": "./assets/car-photos/rivian/r1t-1.webp"
+  },
+  {
+    "name": "Rolls-Royce",
+    "image": "./assets/car-photos/rolls-royce/cullinan-1.webp"
+  },
+  {
+    "name": "Seat",
+    "image": "./assets/car-photos/seat/arona-2.webp"
+  },
+  {
+    "name": "Seat",
+    "image": "./assets/car-photos/seat/leon-3.webp"
+  },
+  {
+    "name": "Skoda",
+    "image": "./assets/car-photos/skoda/octavia-1.webp"
+  },
+  {
+    "name": "Skoda",
+    "image": "./assets/car-photos/skoda/rapid-1.webp"
+  },
+  {
+    "name": "Subaru",
+    "image": "./assets/car-photos/subaru/solterra-2.webp"
+  },
+  {
+    "name": "Subaru",
+    "image": "./assets/car-photos/subaru/forester-1.webp"
+  },
+  {
+    "name": "Subaru",
+    "image": "./assets/car-photos/subaru/forester-2.webp"
+  },
+  {
+    "name": "Suzuki",
+    "image": "./assets/car-photos/suzuki/swift-1.webp"
+  },
+  {
+    "name": "Suzuki",
+    "image": "./assets/car-photos/suzuki/celerio-1.webp"
+  },
+  {
+    "name": "Tesla",
+    "image": "./assets/car-photos/tesla/model-3-2.webp"
+  },
+  {
+    "name": "Tesla",
+    "image": "./assets/car-photos/tesla/model-3-3.webp"
+  },
+  {
+    "name": "Tesla",
+    "image": "./assets/car-photos/tesla/model-s-1.webp"
+  },
+  {
+    "name": "Tesla",
+    "image": "./assets/car-photos/tesla/model-s-2.webp"
+  },
+  {
+    "name": "Tesla",
+    "image": "./assets/car-photos/tesla/model-x-1.webp"
+  },
+  {
+    "name": "Volkswagen",
+    "image": "./assets/car-photos/volkswagen/golf-1.webp"
+  },
+  {
+    "name": "Volkswagen",
+    "image": "./assets/car-photos/volkswagen/t-roc-1.webp"
+  },
+  {
+    "name": "Volkswagen",
+    "image": "./assets/car-photos/volkswagen/tera-1.webp"
+  },
+  {
+    "name": "Volvo",
+    "image": "./assets/car-photos/volvo/s60-2.webp"
+  },
+  {
+    "name": "Volvo",
+    "image": "./assets/car-photos/volvo/s60-3.webp"
+  },
+  {
+    "name": "Volvo",
+    "image": "./assets/car-photos/volvo/s90-2.webp"
+  },
+  {
+    "name": "Volvo",
+    "image": "./assets/car-photos/volvo/s90-3.webp"
+  },
+  {
+    "name": "BMW",
+    "image": "./assets/car-photos/bmw/3-series-sedan-2025-1.jpg"
+  },
+  {
+    "name": "Toyota",
+    "image": "./assets/car-photos/toyota/prius-xle-2023-1.jpg"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "image": "./assets/car-photos/mercedes-benz/gls-2020-1.jpg"
+  },
+  {
+    "name": "BMW",
+    "image": "./assets/car-photos/bmw/m8-competition-coupe-2020-1.jpg"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "image": "./assets/car-photos/mercedes-benz/c43-amg-2023-1.jpg"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "image": "./assets/car-photos/mercedes-benz/eqs-2025-1.jpg"
+  },
+  {
+    "name": "Toyota",
+    "image": "./assets/car-photos/toyota/supra-2020-1.jpg"
+  },
+  {
+    "name": "Toyota",
+    "image": "./assets/car-photos/toyota/tacoma-2024-1.jpg"
+  }
+]
