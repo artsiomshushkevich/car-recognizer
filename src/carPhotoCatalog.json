@@ -357,34 +357,34 @@
   },
   {
     "name": "BMW",
-    "image": "./assets/car-photos/bmw/3-series-sedan-2025-1.jpg"
+    "image": "./assets/car-photos/bmw/3-series-sedan-2025-1.webp"
   },
   {
     "name": "Toyota",
-    "image": "./assets/car-photos/toyota/prius-xle-2023-1.jpg"
+    "image": "./assets/car-photos/toyota/prius-xle-2023-1.webp"
   },
   {
     "name": "Mercedes-Benz",
-    "image": "./assets/car-photos/mercedes-benz/gls-2020-1.jpg"
+    "image": "./assets/car-photos/mercedes-benz/gls-2020-1.webp"
   },
   {
     "name": "BMW",
-    "image": "./assets/car-photos/bmw/m8-competition-coupe-2020-1.jpg"
+    "image": "./assets/car-photos/bmw/m8-competition-coupe-2020-1.webp"
   },
   {
     "name": "Mercedes-Benz",
-    "image": "./assets/car-photos/mercedes-benz/c43-amg-2023-1.jpg"
+    "image": "./assets/car-photos/mercedes-benz/c43-amg-2023-1.webp"
   },
   {
     "name": "Mercedes-Benz",
-    "image": "./assets/car-photos/mercedes-benz/eqs-2025-1.jpg"
+    "image": "./assets/car-photos/mercedes-benz/eqs-2025-1.webp"
   },
   {
     "name": "Toyota",
-    "image": "./assets/car-photos/toyota/supra-2020-1.jpg"
+    "image": "./assets/car-photos/toyota/supra-2020-1.webp"
   },
   {
     "name": "Toyota",
-    "image": "./assets/car-photos/toyota/tacoma-2024-1.jpg"
+    "image": "./assets/car-photos/toyota/tacoma-2024-1.webp"
   }
 ]
