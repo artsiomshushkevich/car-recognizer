@@ -12,11 +12,35 @@ const shuffle = (items) => {
   return copy
 }
 
+const buildPhotoDeck = (brandDeck) => {
+  const groups = brandDeck
+    .map((brand) => getCarPhotos(brand.name).map((photo) => ({ brand, photo })))
+    .filter((photos) => photos.length > 0)
+  const photoDeck = []
+  let previousBrand = null
+  let remaining = groups.reduce((total, group) => total + group.length, 0)
+
+  while (remaining > 0) {
+    const nextGroup = groups
+      .filter((group) => group.length > 0 && group[0].brand.name !== previousBrand)
+      .reduce((largest, group) => group.length > largest.length ? group : largest, [])
+
+    if (nextGroup.length === 0) break
+
+    const nextPhoto = nextGroup.shift()
+    photoDeck.push(nextPhoto)
+    previousBrand = nextPhoto.brand.name
+    remaining -= 1
+  }
+
+  return photoDeck
+}
+
 export default function App() {
   const [deck, setDeck] = useState(() => shuffle(brands))
   const [position, setPosition] = useState(0)
   const [mode, setMode] = useState('logos')
-  const photoDeck = deck.flatMap((brand) => getCarPhotos(brand.name).map((photo) => ({ brand, photo })))
+  const photoDeck = buildPhotoDeck(deck)
   const activeDeck = mode === 'photos' ? photoDeck : deck
   const activePosition = Math.min(position, activeDeck.length - 1)
   const card = activeDeck[activePosition]
@@ -68,8 +92,7 @@ export default function App() {
 
       <section className={mode === 'photos' ? 'learning-area photos-mode' : 'learning-area'} aria-labelledby="page-title">
         <div className="intro">
-          <h1 id="page-title">Знакомься: <span>марки автомобилей</span>!</h1>
-          <p className="eyebrow"><span aria-hidden="true">🏁</span> НА СТАРТ, ВНИМАНИЕ, УЧИМСЯ!</p>
+          <h1 id="page-title"><span className="title-flag" aria-hidden="true">🏁</span> Знакомься: <span>автомобили!</span></h1>
         </div>
 
         <div className="mode-switch" role="group" aria-label="Режим обучения">
