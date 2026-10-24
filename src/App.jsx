@@ -58,15 +58,7 @@ export default function App() {
   }
   const switchMode = (nextMode) => {
     if (nextMode === mode) return
-    if (nextMode === 'photos') {
-      const currentBrand = deck[position]
-      const matchingPhoto = photoDeck.findIndex((item) => item.brand.name === currentBrand?.name)
-      setPosition(matchingPhoto >= 0 ? matchingPhoto : 0)
-    } else {
-      const currentPhoto = photoDeck[position]
-      const matchingBrand = deck.findIndex((brand) => brand.name === currentPhoto?.brand.name)
-      setPosition(matchingBrand >= 0 ? matchingBrand : 0)
-    }
+    setPosition(0)
     setMode(nextMode)
   }
 
